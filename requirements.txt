@@ -1,0 +1,2 @@
+# IdForge 零第三方依赖 —— 仅需 Python 3.8+ 标准库。
+# 无运行期依赖，无需 pip install 任何包。

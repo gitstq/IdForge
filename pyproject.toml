@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "idforge"
+version = "1.0.0"
+description = "Zero-dependency, sortable unique ID generator (ULID / UUIDv7 / UUIDv4)."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["ulid", "uuid", "uuid7", "uuid4", "id", "identifier", "sortable", "cli"]
+authors = [{ name = "gitstq" }]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/gitstq/IdForge"
+Repository = "https://github.com/gitstq/IdForge"
+
+[project.scripts]
+idforge = "idforge.cli:main"
+
+[tool.setuptools]
+packages = ["idforge"]
+
+[tool.setuptools.package-data]
+idforge = ["py.typed"]
